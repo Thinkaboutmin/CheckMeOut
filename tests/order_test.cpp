@@ -49,7 +49,7 @@ TEST(TotalTaxa, com_produto) {
 	EXPECT_EQ(itemOrder.getTotal(), expectedTotal);
 }
 
-TEST(SubtotalTaxa, sem_produtos) {
+TEST(SubtotalTaxa, sem_produto) {
 	// Resultado deve ser 0 do subtotal quando estamos sem produtos.
 	EXPECT_EQ(Common::itemOrderTax.getSubtotal(), 0);
 }
@@ -98,5 +98,4 @@ TEST(PagarPedido, com_produto) {
 
 	EXPECT_EQ(10, totalPaid);
 }
-
 
